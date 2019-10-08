@@ -1,0 +1,74 @@
+
+$tablet-width: 768px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}){
+    .contenido3 article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+	@include fullpadding(4rem,2rem);
+	@include fullmargin(2rem,auto);
+	background-color: $principal;
+	border-radius: 30px;
+	}
+  .contenido3 .i {
+    margin-right: 0;
+    flex: 0 0 140px;
+	  @include size(10rem,10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include fontsize(4rem);
+    margin-bottom: 1rem;
+   @include transitions; }
+	
+  .contenido3 article:hover .i {
+    transform: scale(1.2);
+   @include transitions;
+    background-color: $terciario;
+    color: white;
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+ }
+  .contenido3 .flecha {
+    @include fontsize(2rem);
+    display: block; }
+
+  .contenido3 h4 a {
+    @include fontsize(1.5rem); }
+
+  .contenido3 h4 {
+    flex: 0 1 auto;
+	@include padding(1rem,auto,1.7rem,auto);
+    text-align: center; }
+
+  .contenido3 p {
+    @include fontsize(1.2rem);
+    padding-bottom: 1rem; }
+	 .contenido3 .btn {
+    @include fontsize(1.5rem);
+    margin-top: auto; }
+	
+ .lateral-izquierdo h1 {
+   @include fontsize(5.5rem); }
+
+  .lateral-izquierdo p {
+    @include fontsize(1.6rem); }
+	
+  }
+	
+  @media (max-width: #{$tablet-width}){
+     .lateral-izquierdo h2{
+		@include fontsize(3rem);
+	}
+	.fondo{
+		height: 200vh;
+	}
+	.lateral-derecho{
+		margin-top: 2rem;
+	}
+  }
+}

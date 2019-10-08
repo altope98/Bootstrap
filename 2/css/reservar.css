@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+		.formulario{
+			padding-top: 10rem;
+			background-color: #DD431B;
+			padding-bottom: 3rem;
+			color: black;
+			font-size: 1.2rem;
+			font-weight: bold;
+			
+		}
+		.formulario label {
+			align-self: center;
+		}
+		.formulario .personas{
+			margin: auto;
+		}
+		.formulario .terminos {
+			margin: auto;
+		}
+		.formulario .boton{
+			margin: auto;
+		}
+		
+	.header {
+  padding: .5rem 0; }
+
+.header .container {
+  display: flex;
+     flex-direction: row;
+      flex-wrap: wrap;
+          align-items: center; }
+		
+		.header .container .logo img {
+  width: 8rem;
+  height: 7rem;
+  margin-right: 3rem; }
+		
+		.boton-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 .5rem;
+  background: transparent;
+  color: white; }
+
+.boton-menu:focus {
+  outline: 0; }
+
+
+
+.boton-menu {
+  margin-right: .8rem; }
+
+
+
+#menu-principal {
+          flex: 1 1 100%; }
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 1rem 0 0 0; }
+
+#menu-principal ul a {
+  display: block;
+  padding: .3rem 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  border-top: 1px solid black;
+  text-decoration: none;
+  font-weight: bold; }
+#menu-principal ul a:hover, #menu-principal ul li.active a {
+  color: #DD431B; }
+		
+		
+		.footer {
+  background-color: #DD431B;
+  border-top: 2px solid black;
+  text-align: center; }
+
+.footer .redes {
+  display: flex;
+  justify-content: center;
+	align-content: center;
+	
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer .redes a {
+  color: #DEDEE0;
+  font-size: 2rem;
+  margin: 0 .6rem;
+  opacity: .7;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.footer .redes a:hover {
+  opacity: 1; }
+		
+		.footer p{
+			
+			padding-left: 2rem;
+		}
+	
+		.boton .btn:hover{
+			color: #DD431B;}
+			.boton .btn{
+				transition:  all 1s ease;
+			}
+		@media (min-width: 768px) {
+			#menu-principal {
+    height: auto !important;
+    display: block;
+            order: 1;
+            flex: 0 1 auto;
+    margin-left: auto; }
+
+
+  #menu-principal ul {
+    display: flex;
+
+    margin: 0; }
+
+  #menu-principal ul li a {
+	  font-size: 1rem;
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: none;
+    border-bottom: 4px solid  #DD431B transparent;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+
+  #menu-principal ul li.active a, #menu-principal ul li a:hover {
+    color: #DD431B;
+    border-bottom: 4px solid  #DD431B; }
+			.header .container {
+    position: relative; }
+			
+		}
+	

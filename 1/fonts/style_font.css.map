@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAGC,CAFA,WAAW,CAAE,KAAK,CAClB,GAAG,CAAE,iBAAiB,CAEvB,UAGC,CAFA,WAAW,CAAE,OAAO,CACpB,GAAG,CAAE,iBAAiB",
+"sources": ["../scss/style_font.scss"],
+"names": [],
+"file": "style_font.css"
+}

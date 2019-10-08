@@ -1,0 +1,200 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+@import "colors";
+@import "mixins";
+@import "media";
+
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+
+
+	
+
+.icons-sprite, .icons-facebook, .icons-twitter, .icons-yotube {
+  background-image: url('../images/icons-s001bb327fe.png');
+  background-repeat: no-repeat;
+}
+.header{
+	@include transitions;
+	@include fullpadding(0,0);
+	background-color: rgba(100,100,100,0.0)
+}
+.fondo-menu{
+	background-color: $principal;
+}
+.fondo{
+  background: url("../images/mejores-coches-para-carretera.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+	@include size(auto,120vh);
+}
+.header .logo{
+	display: flex;
+	justify-content: center;
+}
+.header .logo img{
+	@include size(40vh,15vh);
+}
+
+.encabezado {
+	@include padding(18rem,3rem,auto,3rem);
+}
+
+.lateral-izquierdo h2{
+	@include family;
+	font-weight: bold;
+	color: black;
+	@include fontsize(80px);
+}
+.lateral-izquierdo p {
+  padding-top: 2rem;
+@include fontsize(23px);
+  color: white;
+ @include family; }
+
+.lateral-derecho p{
+	text-align: center;
+	@include fullpadding(1rem,1rem);
+  	@include fontsize(17px);
+	color: white;
+ @include family;
+}
+.lateral-derecho{
+	@extend .fondo-menu;
+	border-radius: 20px;
+	@include fullpadding(1.5rem,1.5rem);
+	color: black;
+	@include family;
+	@include boton($secundario,black);
+}
+
+.lateral-derecho h1{
+	@include family;
+	@include fontsize(28px);
+	padding-bottom: 1rem;
+	color: black;
+}
+.boton-flecha a  {
+  @include fullpadding(2rem,auto);
+  display: inline-block;
+  @include fontsize(3.5rem);
+  color: black;
+  @include transitions;
+   animation: flecha-abajo 2s ease-in-out infinite; }
+
+.boton-flecha a:hover {
+  color: $secundario; }
+
+
+@keyframes flecha-abajo {
+  from {
+            transform: translateY(0); }
+  50% {
+            transform: translateY(10px); }
+  to {
+            transform: translateY(0); } }
+
+.contenido3 {
+  background-color:$secundario;
+  text-align: center;
+}
+
+.contenido3 .fas {
+  @include fontsize(3rem);
+  @extend .fondo-menu;
+  border-radius: 50%;
+	@indlude size(4.7rem,4.7rem);
+  line-height: 4.7rem;
+  overflow: hidden;
+  margin-right: 2.5rem; }
+
+.contenido3 i {
+  text-align: center;
+  color: black; }
+
+.contenido3 .flecha i {
+  color: white; }
+
+.contenido3 article {
+  display: flex;
+  align-items: center;
+  @include fullmargin(1rem,0);
+@extend .fondo-menu;
+}
+
+.contenido3 {
+	@include boton($secundario,black);
+}
+.contenido3 article p {
+  color: white;
+  @include family;
+  font-weight: 300; }
+
+.contenido3 h4 a {
+  flex: 1 1 0px;
+  margin: 0;
+  @include fontsize(1.1rem);
+  color: white;
+  @include family;
+  text-decoration: none; }
+
+.contenido3 h2 {
+  color: black;
+  @include family;
+  font-weight: bold;
+  @include fontsize(30px);
+  margin-bottom: 1.3rem;
+  padding-top: 2rem; }
+
+.contenido3 h4 {
+  flex: 1 1 auto;
+  margin: 0;
+  text-align: left; }
+
+.footer {
+  @extend .fondo-menu;
+  text-align: center; }
+
+.footer .redes {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  @include fullpadding(0,0);
+  @include fullmargin(0,0);
+  padding-top: 1rem;}
+
+.footer .redes a {
+  color: black;
+  @include fontsize(2rem);
+  @include fullmargin(0,6rem);
+  opacity: .7;
+  @include transitions; }
+
+.footer .redes a:hover {
+  opacity: 1; }
+
+.modal{
+	@include family;
+
+}
+.modal-footer{
+	justify-content: center;
+}
+.modal h5{
+	@include fontsize(2rem);
+}
+.modal p{
+	@include fontsize(1rem);
+}
+@include tablet;
+.social{
+	@include size(60px,60px);
+}

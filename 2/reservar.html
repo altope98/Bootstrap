@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reservar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/reservar.css">
+	<link rel="icon" 
+      type="image/ico" 
+      href="images/Sonya-Swarm-Pizza.ico">
+	
+</head>
+
+<body>
+	
+	
+	<header class="header fixed-top navbar navbar-expand-lg navbar-dark bg-primary" role="banner">
+		  <div class="container">
+			  
+		  <a href="index.html" class="logo"><img src="./images/Pizza-Logo-vintage-styles-vector-03.jpg" alt="logo"></a>
+		  
+		  <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fas fa-bars"></i></button>
+		  
+		  
+		  <nav id="menu-principal"  class="collapse">
+		  	<ul>
+			  <li ><a href="index.html" >Inicio</a></li>
+			  <li><a href="platos.html">Platos</a></li>
+				<li class="active"><a href="reservar.html">Reservar</a></li>
+		   </ul>
+			  
+			  
+		 </nav>		  
+		  </div>
+		</header>
+	
+	
+	<form class="formulario">
+		<div class="container">
+		<div class="form-group row py-2">
+    <label for="input" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="input" placeholder="Nombre">
+    </div>
+  </div>
+		<div class="form-group row py-2">
+    <label for="input2" class="col-sm-2 col-form-label">Apellidos</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="input2" placeholder="Apellidos">
+    </div>
+  </div>
+		<div class="form-group row py-2">
+    <label for="input3" class="col-sm-2 col-form-label">Telefono</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="input3" placeholder="Telefono">
+    </div>
+  </div>
+  <div class="form-group row py-2">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+		
+		
+		<div class="personas form-group col-5 py-2" align="center">
+    <label for="exampleFormControlSelect1">Numero de personas</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5+</option>
+    </select>
+  </div>
+		
+  <div class="form-group col-10 py-4 terminos" align="center">
+    
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">
+          Acepto terminos y condiciones
+        </label>
+      </div>
+    
+  </div>
+  <div class="form-group col-10 py-2 boton" align="center">
+    
+      <button type="button" class="btn btn-primary align-self-center" data-toggle="modal" data-target="#enviado">Reservar</button>
+    
+  </div>
+			</div>
+</form>
+	
+	
+	<div class="modal fade" id="enviado" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Exito</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Su reserva se ha realizado con exito</p>
+      </div>
+      <div class="modal-footer">
+		  <button type="button" class="btn btn-primary" data-dismiss="modal">¡OK!</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+	<footer class="footer navbar navbar-expand-lg navbar-dark bg-primary">
+
+<ul class="redes">
+		  		<li><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+		  		<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.es"><i class="fab fa-youtube"></i></a></li>
+		  </ul>
+  	<p>Desarrollado por Alvaro</p>
+</footer>
+	
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

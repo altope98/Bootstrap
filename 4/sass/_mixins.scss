@@ -1,0 +1,38 @@
+@mixin boton($fondo,$color){
+	.btn:hover{
+		color: $color;
+		background-color: $fondo;
+	}
+}
+@mixin padding($top,$left,$bottom,$right){
+	padding-top: $top;
+	padding-left: $left;
+	padding-bottom: $bottom;
+	padding-right: $right;
+}
+@mixin margin($top,$left,$bottom,$right){
+	margin-top: $top;
+	margin-left: $left;
+	margin-bottom: $bottom;
+	margin-right: $right;
+}
+@mixin size($width,$height){
+	width: $width;
+	height: $height;
+}
+@mixin fullpadding($y,$x){
+	padding: $y $x;
+}
+@mixin fullmargin($y,$x){
+	margin: $y $x;
+}
+@mixin family {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+@mixin fontsize($fontsize){
+	font-size: $fontsize;
+}
+@mixin transitions{
+	transition:  all 1s ease;
+}

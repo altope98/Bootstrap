@@ -1,0 +1,758 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Platos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/platos.css">
+	<link rel="icon" 
+      type="image/ico" 
+      href="images/Sonya-Swarm-Pizza.ico">
+	
+	
+	<style>
+	.header {
+  padding: .5rem 0; }
+
+.header .container {
+  display: flex;
+     flex-direction: row;
+      flex-wrap: wrap;
+          align-items: center; }
+		
+		.header .container .logo img {
+  width: 8rem;
+  height: 7rem;
+  margin-right: 3rem; }
+		
+		.boton-menu {
+  border: 0;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 .5rem;
+  background: transparent;
+  color: white; }
+
+.boton-menu:focus {
+  outline: 0; }
+
+
+
+.boton-menu {
+  margin-right: .8rem; }
+
+
+
+#menu-principal {
+          flex: 1 1 100%; }
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 1rem 0 0 0; }
+
+#menu-principal ul a {
+  display: block;
+  padding: .3rem 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  border-top: 1px solid black;
+  text-decoration: none;
+  font-weight: bold; }
+#menu-principal ul a:hover, #menu-principal ul li.active a {
+  color: #DD431B; }
+		
+.footer {
+  background-color: #DD431B;
+  border-top: 2px solid black;
+  text-align: center; }
+
+.footer .redes {
+  display: flex;
+  justify-content: center;
+	align-content: center;
+	
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer .redes a {
+  color: #DEDEE0;
+  font-size: 2rem;
+  margin: 0 .6rem;
+  opacity: .7;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.footer .redes a:hover {
+  opacity: 1; }
+		
+		.footer p{
+			
+			padding-left: 2rem;
+		}
+	
+@media (min-width: 768px) {
+	 #menu-principal {
+    height: auto !important;
+    display: block;
+            order: 1;
+            flex: 0 1 auto;
+    margin-left: auto; }
+
+
+  #menu-principal ul {
+    display: flex;
+
+    margin: 0; }
+
+  #menu-principal ul li a {
+	  font-size: 1rem;
+    padding: .8rem;
+    text-transform: capitalize;
+    margin: 0 .3rem;
+    border-top: none;
+    border-bottom: 4px solid  #DD431B transparent;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+
+  #menu-principal ul li.active a, #menu-principal ul li a:hover {
+    color: #DD431B;
+    border-bottom: 4px solid  #DD431B; }
+
+  .header .container {
+    position: relative; }
+	
+		}
+	
+		.platos{
+			padding-top: 8rem;
+			background-color: #1a1a1a;
+		} 
+		.platos h3{
+			color: #DD431B;
+		}
+		.platos a{
+			color: white;
+			font-weight: bold;
+			background-color: #DD431B;
+		
+		}
+		.platos a:hover{
+			color: black;
+		}
+		.platos ul li{
+			 
+			background-color: #1a1a1a;
+		}
+		.platos ul li a{
+			 transition: all .5s ease; 
+
+		}
+		.platos ul li.active a, .platos ul li a:hover{
+			 color: black;
+		}
+
+		.plato img{
+			width: 60%;
+			height: 60%;
+			padding: 1rem;
+			margin: 
+				auto;
+			transition: all .5s ease; 
+		}
+		.plato:hover{
+			transform: scale(1.1);
+			
+		}
+		.plato img:hover{
+			transform: scale(1.1);
+		}
+		.plato p, .plato h3{
+			text-align: center;
+			color: black;
+			font-weight: bold;
+			padding: .1rem 2rem;
+		}
+		.plato p{
+			text-align: justify;
+		}
+		.plato p:last-child{
+			text-align: center;
+		}
+
+				.plato{
+					transition: all .5s ease; 
+					padding-bottom: 7rem;
+			background-color: #DD431B;
+			float: none;
+    margin: 2rem auto;
+		}
+		
+		#v-pills-tab{
+			transition: all .5s ease; 
+			display: flex;
+			justify-content: center;
+		}
+		#v-pills-tab a{
+			transition: all .5s ease; 
+		}
+		
+		.card-body{
+			display: flex;
+			flex-flow: column wrap;
+		}
+		.card-body div > img{
+			width: 15rem;
+			height: 15rem;
+			
+		}
+		.card-body > div{
+			display:flex;
+			flex-flow: column nowrap;
+			align-content: center;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			margin: 1rem 0;
+			
+		}
+
+		
+		.card-body div > h4{
+			padding: 2rem 0;
+			color: black;
+		}
+.card-body div > h3{
+	color: black;
+		}
+	.card
+		{
+			background-color: #DD431B;
+		}
+		.card-header button{
+			color: black;
+			font-size: 1.5rem;
+		}
+		
+	</style>
+</head>
+
+<body>
+	
+	 <header class="header fixed-top navbar navbar-expand-lg navbar-dark bg-primary" role="banner">
+		  <div class="container">
+			  
+		  <a href="index.html" class="logo"><img src="./images/Pizza-Logo-vintage-styles-vector-03.jpg" alt="logo"></a>
+		  
+		  <button type="button" class="boton-menu d-md-none" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fas fa-bars"></i></button>
+		  
+		  
+		  <nav id="menu-principal"  class="collapse">
+		  	<ul>
+			  <li><a href="index.html" >Inicio</a></li>
+			  <li  class="active"><a href="platos.html">Platos</a></li>
+				<li><a href="reservar.html">Reservar</a></li>
+		   </ul>
+			  
+			  
+		 </nav>		  
+		  </div>
+		</header>
+	
+	
+	<section class="platos" id="platos">
+		<div class="container-fluid">
+			<div class=" col-12 "  >
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Platos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#menus" role="tab" aria-controls="profile" aria-selected="false">Menus</a>
+  </li>
+
+</ul>
+			
+<div class="tab-content" id="myTabContent">
+	
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+	  <div class="container-fluid">
+	  <h3 class="text-center col-12 py-4">Estos son nuestros platos</h3>
+			<div class="row">
+				<div class="nav nav-pills col-12" align="center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Entrantes</a>
+  						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Primeros</a>
+  						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Segundos</a>
+  						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Postres</a>
+					<a class="nav-link" id="v-pills-settings2-tab" data-toggle="pill" href="#v-pills-settings2" role="tab" aria-controls="v-pills-settings2" aria-selected="false">Bebidas</a>
+				</div>
+			<div class="tab-content" id="v-pills-tabContent">
+  				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+					<div class="row">
+                				<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/plato-de-jamon-y-queso.jpg" class="img-responsive" alt=""/>
+                        			<h3>Jamon y queso</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>4€</p>                    				
+                				</div>
+								<div class="plato col-12 col-lg-5 " align="center">
+									<img src="images/maxresdefault.jpg" class="img-responsive" alt=""/>
+                        			<h3>Canapes</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>5€</p>                    				
+                				</div>
+						</div>
+				</div>
+  				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+					<div class="row">
+                				<div class="plato col-12 col-lg-5  " align="center" >
+									<img src="images/primero1.jpg" class="img-responsive" alt=""/>
+                        			<h3>Spagettis con gambas</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>9€</p>                    				
+                				</div>
+								<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/primero2.jpg" class="img-responsive" alt=""/>
+                        			<h3>Ensalada de pasta</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>8€</p>                    				
+                				</div>
+								<div class="plato col-12 col-lg-5 "  align="center">
+									<img src="images/img_rocarceller_20180529-171445_imagenes_lv_getty_istock-527439685-ky6C-U443929942971BUG-992x558@LaVanguardia-Web.jpg" class="img-responsive" alt=""/>
+                        			<h3>Spagettis a la boloñesa</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>10€</p>                    				
+                				</div>
+						<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/One-Pot-Chicken-Parmesan-Pasta-feat.jpg" class="img-responsive" alt=""/>
+                        			<h3>Macarrones a la parmesana</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>10€</p>                    				
+                				</div>
+						</div>
+					
+				</div>
+				
+				<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+								<div class="row">
+									<div class="plato col-12 col-lg-5 "  align="center">
+									<img src="images/segundo1.jpg" class="img-responsive" alt=""/>
+                        			<h3>Pizza jamon y queso</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>10€</p>                    				
+                				</div>
+									<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/segundo2.jpg" class="img-responsive" alt=""/>
+                        			<h3>Pizza carbonara</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>11€</p>                    				
+                				</div>
+									<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/segundo4.jpg" class="img-responsive" alt=""/>
+                        			<h3>Pizza tropical</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>11€</p>                    				
+                				</div>
+									<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/pizza-pepperoni-916.jpg" class="img-responsive" alt=""/>
+                        			<h3>Pizza pepperoni</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>11€</p>                    				
+                				</div>
+					</div>
+				</div>
+  				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+									<div class="row">
+								<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/postre1.jpg" class="img-responsive" alt=""/>
+                        			<h3>Helado de fresa</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>4€</p>                    				
+                				</div>
+										<div class="plato col-12 col-lg-5 "  align="center">
+									<img src="images/postre2.jpg" class="img-responsive" alt=""/>
+                        			<h3>Tarta de queso</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>4€</p>                    				
+                				</div>
+										<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/postre3.png" class="img-responsive" alt=""/>
+                        			<h3>Mousse de chocolate</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>4€</p>                    				
+                				</div>
+										<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/postre4.jpg" class="img-responsive" alt=""/>
+                        			<h3>Tarta de chocolate</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>4€</p>                    				
+                				</div>
+					</div>		
+				</div>
+				<div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings2-tab">
+										<div class="row">
+					<div class="plato col-12 col-lg-5 " align="center" >
+									<img src="images/bebida2.jpg" class="img-responsive" alt=""/>
+                        			<h3>Cerveza o vino</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>2€</p>                    				
+                				</div>
+											<div class="plato col-12 col-lg-5 "  align="center">
+									<img src="images/bebida4.jpg" class="img-responsive" alt=""/>
+                        			<h3>Refresco o agua</h3>
+                        			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type</p>
+									<p>1.5€</p>                    				
+                				</div>
+					</div>
+				</div>
+			</div>
+
+				</div>
+	  </div>
+	</div>
+	
+
+	
+	
+				
+
+  <div class="tab-pane fade" id="menus" role="tabpanel" aria-labelledby="profile-tab">
+	  <section class="menus">
+		  <div class="container-fluid">
+			<h3 class="text-center py-4">Nuestros menus</h3>
+				
+			  
+			  <div id="accordion">
+  			<div class="card">
+    		<div class="card-header" id="headingOne">
+     			 <h5 class="mb-0 text-center">
+        			<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          					Menu 1
+        			</button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        
+		  		
+		  <div class="entrante">
+			  <div class="row">
+		  			<h3>Entrante</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/plato-de-jamon-y-queso.jpg">
+						</div>
+						<div class="row">
+						<h4>Jamon y queso</h4>
+						</div>
+		  		</div>
+		  <div class="primero">
+			  <div class="row">
+		  			<h3>Primero</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/primero1.jpg">
+						</div>
+						<div class="row">
+						<h4>Spaghettis con gambas</h4>
+						</div>
+		  		</div>	
+		  <div class="segundo">
+			  <div class="row">
+		  			<h3>Segundo</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/segundo1.jpg">
+						</div>
+						<div class="row">
+						<h4>Pizza de jamon y queso</h4>
+						</div>
+		  		</div>	
+		  <div class="postre">
+			  <div class="row">
+		  			<h3>Postre</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/postre4.jpg">
+						</div>
+						<div class="row">
+						<h4>Tarta de chocolate</h4>
+						</div>
+		  		</div>	
+		  <div class="bebida">
+			  <div class="row">
+		  			<h3>Bebida</h3>
+				  </div>
+			  		<div class="row">
+						<h4>Cerveza / Vino / Agua / Refresco</h4>
+						</div>
+		  		</div>	
+		  <div class="precio">
+			  <div class="row">
+		  			<h2>17€</h2>
+				  </div>
+		  		</div>	
+		  
+		  
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0  text-center">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Menu 2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+         <div class="entrante">
+			  <div class="row">
+		  			<h3>Entrante</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/maxresdefault.jpg">
+						</div>
+						<div class="row">
+						<h4>Canapes</h4>
+						</div>
+		  		</div>
+		  <div class="primero">
+			  <div class="row">
+		  			<h3>Primero</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/img_rocarceller_20180529-171445_imagenes_lv_getty_istock-527439685-ky6C-U443929942971BUG-992x558@LaVanguardia-Web.jpg">
+						</div>
+						<div class="row">
+						<h4>Spaghettis a la boloñesa</h4>
+						</div>
+		  		</div>	
+		  <div class="segundo">
+			  <div class="row">
+		  			<h3>Segundo</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/segundo4.jpg">
+						</div>
+						<div class="row">
+						<h4>Pizza tropical</h4>
+						</div>
+		  		</div>	
+		  <div class="postre">
+			  <div class="row">
+		  			<h3>Postre</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/postre3.jpg">
+						</div>
+						<div class="row">
+						<h4>Mousse de chocolate</h4>
+						</div>
+		  		</div>	
+		  <div class="bebida">
+			  <div class="row">
+		  			<h3>Bebida</h3>
+				  </div>
+			  		<div class="row">
+						<h4>Cerveza / Vino / Agua / Refresco</h4>
+						</div>
+		  		</div>	
+		  <div class="precio">
+			  <div class="row">
+		  			<h2>19€</h2>
+				  </div>
+		  		</div>	
+      </div>
+    </div>
+  </div>
+				  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0  text-center">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Menu 3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <div class="entrante">
+			  <div class="row">
+		  			<h3>Entrante</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/plato-de-jamon-y-queso.jpg">
+						</div>
+						<div class="row">
+						<h4>Jamon y queso</h4>
+						
+						
+						</div>
+		  		</div>
+		  <div class="primero">
+			  <div class="row">
+		  			<h3>Primero</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/One-Pot-Chicken-Parmesan-Pasta-feat.jpg">
+						</div>
+						<div class="row">
+						<h4>Macarrones con queso</h4>
+						</div>
+		  		</div>	
+		  <div class="segundo">
+			  <div class="row">
+		  			<h3>Segundo</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/pizza-pepperoni-916.jpg">
+						</div>
+						<div class="row">
+						<h4>Pizza pepperoni</h4>
+						</div>
+		  		</div>	
+		  <div class="postre">
+			  <div class="row">
+		  			<h3>Postre</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/postre2.jpg">
+						</div>
+						<div class="row">
+						<h4>Tarta de queso</h4>
+						</div>
+		  		</div>	
+		  <div class="bebida">
+			  <div class="row">
+		  			<h3>Bebida</h3>
+				  </div>
+			  		<div class="row">
+						<h4>Cerveza / Vino / Agua / Refresco</h4>
+						</div>
+		  		</div>	
+		  <div class="precio">
+			  <div class="row">
+		  			<h2>15€</h2>
+				  </div>
+		  		</div>	
+      </div>
+    </div>
+  </div>
+	<div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0  text-center">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Menu 4
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        <div class="entrante">
+			  <div class="row">
+		  			<h3>Entrante</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/maxresdefault.jpg">
+						</div>
+						<div class="row">
+						<h4>Canapes</h4>
+						</div>
+		  		</div>
+		  <div class="primero">
+			  <div class="row">
+		  			<h3>Primero</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/primero2.jpg">
+						</div>
+						<div class="row">
+						<h4>Ensalada de pasta</h4>
+						</div>
+		  		</div>	
+		  <div class="segundo">
+			  <div class="row">
+		  			<h3>Segundo</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/segundo2.jpg">
+						</div>
+						<div class="row">
+						<h4>Pizza carbonara</h4>
+						</div>
+		  		</div>	
+		  <div class="postre">
+			  <div class="row">
+		  			<h3>Postre</h3>
+				  </div>
+			  		<div class="row">
+		  				<img src="images/postre1.jpg">
+						<h4>Helado de fresa</h4>
+						</div>
+		  		</div>	
+		  <div class="bebida">
+			  <div class="row">
+		  			<h3>Bebida</h3>
+				  </div>
+			  		<div class="row">
+						<h4>Cerveza / Vino / Agua / Refresco</h4>
+						</div>
+		  		</div>	
+		  <div class="precio">
+			  <div class="row">
+		  			<h2>16€</h2>
+				  </div>
+		  		</div>	
+      </div>
+    </div>
+  </div>
+				  
+				  
+				  
+</div>
+		  
+			  
+			  
+			  
+			  
+		  
+		  </div>
+	</section>
+	</div>
+
+	</div>
+			
+				
+		
+</div>
+		</div>
+				</section>
+	
+		
+	
+	<footer class="footer navbar navbar-expand-lg navbar-dark bg-primary">
+
+<ul class="redes">
+		  		<li><a href="https://es-es.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+		  		<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.youtube.es"><i class="fab fa-youtube"></i></a></li>
+		  </ul>
+  	<p>Desarrollado por Alvaro</p>
+</footer>
+	
+	
+	
+	
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
